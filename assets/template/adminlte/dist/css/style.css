@@ -1,0 +1,46 @@
+.stats-card{
+    background-color: #E17225;
+    font-weight: bold;
+}
+
+.bg-table{
+    background-color:  #205B6F;
+}
+
+.table-orange{
+    background-color: #E17225;
+}
+
+.btn-green{
+    background-color: #42FF00;
+    position: relative;;
+    width: 103px;
+    height: 35px;
+}
+
+.btn-sekkom{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 430px;
+    top: 190px;
+    background-color: #007BFF;
+}
+
+.btn-sek{
+    position: inherit;
+    left: 21.39%;
+    right: 2.36%;
+    top: 39.56%;
+    bottom: 55%;
+    height: 49px;
+    width: 1080px;
+    left: 380px;
+    top: 200px;
+    border-radius: 3px;
+    background-color: #E17225;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

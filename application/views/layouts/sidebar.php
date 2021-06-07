@@ -3,71 +3,64 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="<?=template('dist/img/user2-160x160.jpg')?>" class="img-circle elevation-2" alt="User Image">
+          <img src="<?=template('dist/img/user.jpg')?>" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">ADMIN</a>
+          <a href="#" class="d-block">Posisi</a>
         </div>
       </div>
-
-      <!-- SidebarSearch Form -->
-      <!-- <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-          </div>
-        </div>
-      </div> -->
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-home"></i>
-              <p>
-                Dashboard
-              </p>
+            <a href="<?php echo site_url("beranda");?>" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt" aria_hidden="true"></i>
+              <p>Dashboard</p>
             </a>
           </li>
-
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
-              <p>
-                Dokumen diproses
-              </p>
+            <a href="<?php echo site_url("document_proses/read");?>" class="nav-link">
+              <i class="nav-icon fa fa-file" aria_hidden="true"></i>
+              <p>Dokumen Diproses</p>
             </a>
           </li>
-           
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
-              <p>
-                Dokumen selesai
-              </p>
+            <a href="<?php echo site_url("document_selesai/read");?>" class="nav-link">
+              <i class="nav-icon fa fa-check" aria_hidden="true"></i>
+              <p>Dokumen Selesai</p>
             </a>
           </li>
-
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-user"></i>
+              <i class="nav-icon fas fa-archive"></i>
               <p>
-              Administrasi
+                Admnistrasi
+                <i class="right fas fa-angle-right"></i>
               </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo site_url("administrasi/doc_baru");?>" class="nav-link">
+                  <i class="fa fa-envelope nav-icon"></i>
+                  <p>Dokumen Baru</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo site_url("administrasi/doc_selesai");?>" class="nav-link">
+                  <i class="fa fa-envelope-open nav-icon"></i>
+                  <p>Dokumen Diproses</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo site_url("administrasi/user");?>" class="nav-link">
+                  <i class="fa fa-user nav-icon"></i>
+                  <p>Administrasi User</p>
+                </a>
+              </li>
+            </ul>
           </li>
-          
-          
-          
-          
-          
-      <!-- </nav> -->
-      <!-- /.sidebar-menu -->
+        </ul>
+      </nav>
     </div>
-    <!-- /.sidebar -->
