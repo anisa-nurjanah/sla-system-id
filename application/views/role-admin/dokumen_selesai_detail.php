@@ -5,58 +5,56 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h5><b>Dokumen Selesai</b></h5>
+            <h1>Dokumen Selesai</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="<?=template('beranda_admin')?>">Beranda</a></li>
+              <li class="breadcrumb-item active">Dokumen Selesai</li>
+            </ol>
           </div>
         </div>
-      </div>
+      </div><!-- /.container-fluid -->
     </section>
 
     <!-- Main content -->
-    <div class="content">
-      <div class="container">
+    <section class="content">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-12">
             <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title"><b>Formulir Dokumen Baru</b></h4>
-                </div>
+              <div class="card-header">
+                <h3 class="card-title">#Nomor Dokumen</h3>
+              </div>
+              
+             
               <div class="card-body">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td>Tanggal Masuk Dokumen</td>
-                      <td><td>:</td></td>
-                      <td>1 Januari 2019</td>
-                    </tr>
-                    <tr>
-                      <td>Tanggal Terakhir Dokumen</td>
-                      <td><td>:</td></td>
-                      <td>4 Januari 2019</td>
-                    </tr>
-                    <tr>
-                      <td>Nama Debitur</td>
-                      <td><td>:</td></td>
-                      <td>PT.Djarum</td>
-                    </tr>
-                    <tr>
-                      <td>CIF Debitur</td>
-                      <td><td>:</td></td>
-                      <td>CIF Debitur</td>
-                    </tr>
-                    <tr>
-                      <td>Status Dokumen</td>
-                      <td><td>:</td></td>
-                      <td>Disposisi</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <table class="table">
+                      <tr>
+                        <th >Tanggal Masuk Dokumen</th>
+                        <td>1 Januari 2019</td>
+                      </tr>
+                      <tr>
+                        <th>Tanggal Terakhir Dokumen</th>
+                        <td>4 Januari 2019</td>
+                      </tr>
+                      <tr>
+                        <th>Nama Debitur</th>
+                        <td>PT.Djarum</td>
+                      </tr>
+                      <tr>
+                        <th>CIF Debitur</th>
+                        <td>CIF Debitur</td>
+                      </tr>
+                    </table>
+              
                 <br>
                   <table class="table table-striped"  width="100%" data-page-length='5' data-length-change='false'>
                     <thead>
                       <tr class="stats-card">
-                        <th>Kegiatan</th>
-                        <th>Posisi</th>
-                        <th>Waktu</th>
+                        <th scope="col">Kegiatan</th>
+                        <th scope="col">Posisi</th>
+                        <th scope="col">Waktu</th>
                       </tr>
                     </thead>
                     <tbody>

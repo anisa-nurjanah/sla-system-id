@@ -1,12 +1,12 @@
 <?php
 defined("BASEPATH") OR exit ("No direct script access allowed");
 
-class Administrasi extends CI_Controller {
+class Dokumen extends CI_Controller {
 
 
-    public function user(){
+    public function index(){
         // Memanggil view user administrasi
-        $data['content'] = $this->load->view('role-admin/administrasi_user', '', TRUE);
+        $data['content'] = $this->load->view('dokumen', '', TRUE);
 		$this->load->view('layouts/html', $data);
     }
 }

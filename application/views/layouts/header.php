@@ -15,7 +15,7 @@
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-left">
       <div class="image" style="margin-left:auto! Important">
-          <img src="<?=template('dist/img/BNI.png')?>" width="156" height="82" alt="User Image">
+          <!-- <img src="<?=template('dist/img/BNI.png')?>" width="156" height="82" alt="User Image"> -->
       </div>
     </ul>
 
@@ -48,37 +48,35 @@
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-bell"></i>
-          <span class="badge badge-danger navbar-badge">7</span>
+          <i class="far fa-user"></i>
+          <!-- <span class="badge badge-danger navbar-badge">7</span> -->
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-item dropdown-header">Notifications</span>
+          <!-- <span class="dropdown-item dropdown-header">Notifications</span> -->
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-            <i class="fas fa-envelope mr-2"></i> 4 new messages
-            <span class="float-right text-muted text-sm">3 mins</span>
+            <i class="fas fa-unlock-alt mr-2"></i> Reset Password
+            <!-- <span class="float-right text-muted text-sm">3 mins</span> -->
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-            <i class="fas fa-file mr-2"></i> 3 new reports
-            <span class="float-right text-muted text-sm">2 days</span>
+            <i class="fas fa-power-off mr-2"></i> Log Out
+            <!-- <span class="float-right text-muted text-sm">2 days</span> -->
           </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-        </div>
+
       </li>
 
       <!-- Nav Item User Menu -->
-      <li class="nav-item dropdown">
+      <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="userDropdown" data-toggle="dropdown" href="#">
         <span class="mr-2 d-none d-lg-inline text-gray-600 small" width="48" height="48">
           User
         </span>
         <i class="fas fa-user fa-fw"></i>
-        </a>
+        </a> -->
 
         <!-- Detail User -->
-        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+        <!-- <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
           <a class="dropdown-item ajax-link" href="<?php echo site_url('#');?>">
             <i class="fas fa-unlock-alt fa-sm fa-fw mr-2 text-gray-400">
               Reset Password
@@ -90,7 +88,7 @@
             </i>
           </a>
         </div>
-      </li>
+      </li> -->
     </ul>
   </div>
 </nav>

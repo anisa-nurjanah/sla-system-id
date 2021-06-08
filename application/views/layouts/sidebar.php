@@ -3,11 +3,12 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="<?=template('dist/img/user.jpg')?>" class="img-circle elevation-2" alt="User Image">
+          <!-- <img src="<?=template('dist/img/user.jpg')?>" class="img-circle elevation-2" alt="User Image"> -->
+          <img src="<?=template('dist/img/user2-160x160.jpg')?>" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">ADMIN</a>
-          <a href="#" class="d-block">Posisi</a>
+          <!-- <a href="#" class="d-block">Posisi</a> -->
         </div>
       </div>
 
@@ -16,31 +17,83 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">
             <a href="<?php echo site_url("beranda");?>" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt" aria_hidden="true"></i>
-              <p>Dashboard</p>
+              <i class="nav-icon fas fa-home" aria_hidden="true"></i>
+              <p>Dashboard</p><i class="fas fa-angle-left right"></i>
             </a>
+
+            <ul class="nav nav-treeview">
+            <li class="nav-item">
+                <a href="<?php echo site_url("BerandaSekkom");?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>SEK KOM</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo site_url("BerandaSekretaris");?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>SEKRETARIS</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo site_url("BerandaSekretarisBisnis");?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>SEKRETARIS BISNIS</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo site_url("BerandaDGM");?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>DGM/GM</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo site_url("BerandaPimpinan");?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>PIMPINAN</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo site_url("BerandaPengelola");?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>PENGELOLA</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo site_url("Beranda Analyst");?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ANALYST</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo site_url("Beranda");?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ADMIN</p>
+                </a>
+              </li>
+
+            </ul>
+
           </li>
           <li class="nav-item">
-            <a href="<?php echo site_url("document_proses/read");?>" class="nav-link">
+            <a href="<?php echo site_url("DokumenDiproses/read");?>" class="nav-link">
               <i class="nav-icon fa fa-file" aria_hidden="true"></i>
               <p>Dokumen Diproses</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?php echo site_url("document_selesai/read");?>" class="nav-link">
+            <a href="<?php echo site_url("DokumenSelesai/read");?>" class="nav-link">
               <i class="nav-icon fa fa-check" aria_hidden="true"></i>
               <p>Dokumen Selesai</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="<?php echo site_url("Administrasi/user");?>" class="nav-link">
               <i class="nav-icon fas fa-archive"></i>
               <p>
                 Admnistrasi
-                <i class="right fas fa-angle-right"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
+            <!-- <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="<?php echo site_url("administrasi/doc_baru");?>" class="nav-link">
                   <i class="fa fa-envelope nav-icon"></i>
@@ -59,7 +112,7 @@
                   <p>Administrasi User</p>
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </li>
         </ul>
       </nav>
