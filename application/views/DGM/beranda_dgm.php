@@ -5,12 +5,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Beranda Sekretaris Komite</h1>
+            <h1 class="m-0">Beranda DGM/GM</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <!-- <li class="breadcrumb-item"><a href="#">Home</a></li> -->
-              <li class="breadcrumb-item active">Beranda Sekretaris Komite</li>
+              <li class="breadcrumb-item active">Beranda DGM/GM</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -24,7 +24,23 @@
         <!-- Small boxes (Stat box) -->
         <div class="row">
 
-          <div class="col-lg-6 col-6">
+          <div class="col-lg-4 col-6">
+            <!-- small box -->
+            <div class="small-box bg-orange">
+              <div class="inner">
+                <h3>2</h3>
+                <p>Dokumen Baru</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-bag"></i>
+              </div>
+              <a href="#" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+
+
+          <div class="col-lg-4 col-6">
             <!-- small box -->
             <div class="small-box bg-orange">
               <div class="inner">
@@ -40,7 +56,7 @@
           <!-- ./col -->
 
 
-          <div class="col-lg-6 col-6">
+          <div class="col-lg-4 col-6">
             <!-- small box -->
             <div class="small-box bg-orange">
               <div class="inner">
@@ -54,9 +70,6 @@
             </div>
           </div>
           <!-- ./col -->
-          <div class="card-footer clearfix">
-                <button type="button" class="btn btn-primary float-right"><i class="fas fa-plus"></i> Tambah Dokumen Kredit Baru</button>
-              </div>
           </div>
       </div>
 </section>

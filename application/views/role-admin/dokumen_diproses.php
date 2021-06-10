@@ -5,12 +5,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Dokumen diproses</h1>
+            <h1>Dokumen Diproses</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="<?=template('beranda_admin')?>">Beranda</a></li>
-              <li class="breadcrumb-item active">Dokumen diproses</li>
+              <li class="breadcrumb-item active">Dokumen Diproses</li>
             </ol>
           </div>
         </div>
@@ -27,14 +27,15 @@
               <div class="card-header">
                 <h3 class="card-title">Dokumen yang sedang diproses</h3>
                   <div class="card-tools">
-                    <div class="input-group input-group-sm">
-                      <input type="text" class="form-control" placeholder="Cari Dokumen">
-                      <div class="input-group-append">
-                        <div class="btn btn-primary">
-                          <i class="fas fa-search"></i>
+                    <!-- test -->
+                      <!-- div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="Cari Dokumen">
+                        <div class="input-group-append">
+                          <div class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                          </div>
                         </div>
-                      </div>
-                    </div>
+                      </div> test -->
                   </div>
                 </div>
 
@@ -60,7 +61,7 @@
                       <td>Pembuatan SKK</td>
                       <td>Dodi (Analyst)</td>
                       <td>
-                        <a href="<?=site_url('DokumenDiproses/detail')?>" class="btn btn-success">
+                        <a href="<?=site_url('DokumenDiproses/detail')?>" class="btn btn-green">
                           Lihat Detail
                         </a>
                       </td>
@@ -75,10 +76,10 @@
     </div>
     <!-- /.content -->
 </div>
-<!-- <script>
+ <script>
     $('#datatables').DataTable( {
         language: {
             searchPlaceholder: "Cari Dokumen"
         }
     });
-</script> -->
+</script>

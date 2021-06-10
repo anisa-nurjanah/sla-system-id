@@ -23,54 +23,13 @@
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">
-
-          <div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-orange">
-              <div class="inner">
-                <h3>2</h3>
-                <p>Dokumen Baru</p>
+          <div class="card-footer clearfix">
+                <button type="button" class="btn btn-primary float-right">
+                  <i class="fas fa-plus"></i> Tambah User</button>
               </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
-            </div>
           </div>
           <!-- ./col -->
-
-
-          <div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-orange">
-              <div class="inner">
-                <h3>154</h3>
-                <p>Dokumen Diproses</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="#" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-
-
-          <div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-orange">
-              <div class="inner">
-                <h3>1000</h3>
-                <p>Dokumen Selesai</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-person-orange"></i>
-              </div>
-              <a href="#" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          </div>
+        </div>
       </div>
 </section>
 <!-- Main Content -->

@@ -27,14 +27,14 @@
               <div class="card-header">
                 <h3 class="card-title">Dokumen yang telah selesai diproses</h3>
                   <div class="card-tools">
-                    <div class="input-group input-group-sm">
+                    <!-- div class="input-group input-group-sm">
                       <input type="text" class="form-control" placeholder="Cari Dokumen">
                       <div class="input-group-append">
                         <div class="btn btn-primary">
                           <i class="fas fa-search"></i>
                         </div>
                       </div>
-                    </div>
+                    </div -->
                   </div>
                 </div>
               <div class="card-body">
@@ -57,7 +57,7 @@
                       <td>PT. Djarum</td>
                       <td>Disposisi</td>
                       <td>
-                        <a href="<?=site_url('DokumenSelesai/detail')?>" class="btn btn-success">
+                        <a href="<?=site_url('DokumenSelesai/detail')?>" class="btn btn-green">
                           Lihat Detail
                         </a>
                       </td>
@@ -72,10 +72,10 @@
     </div>
     <!-- /.content -->
 </div>
-<!-- <script>
+<<script>
     $('#datatables').DataTable( {
         language: {
             searchPlaceholder: "Cari Dokumen"
         }
     });
-</script> -->
+</script>

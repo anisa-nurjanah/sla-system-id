@@ -46,6 +46,10 @@
                         <th>CIF Debitur</th>
                         <td>CIF Debitur</td>
                       </tr>
+                      <tr>
+                        <th>Status Dokumen</th>
+                        <td>Pembuatan SKK</td>
+                      </tr>
                     </table>
               
                 <br>

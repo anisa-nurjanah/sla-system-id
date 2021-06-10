@@ -18,11 +18,11 @@
           <li class="nav-item">
             <a href="<?php echo site_url("beranda");?>" class="nav-link">
               <i class="nav-icon fas fa-home" aria_hidden="true"></i>
-              <p>Dashboard</p><i class="fas fa-angle-left right"></i>
+              <p>Dashboard</p><i class="fas fa-angle-right right"></i>
             </a>
 
             <ul class="nav nav-treeview">
-            <li class="nav-item">
+              <li class="nav-item">
                 <a href="<?php echo site_url("BerandaSekkom");?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>SEK KOM</p>
@@ -59,7 +59,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo site_url("Beranda Analyst");?>" class="nav-link">
+                <a href="<?php echo site_url("BerandaAnalyst");?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>ANALYST</p>
                 </a>
@@ -75,20 +75,30 @@
 
           </li>
           <li class="nav-item">
-            <a href="<?php echo site_url("DokumenDiproses/read");?>" class="nav-link">
-              <i class="nav-icon fa fa-file" aria_hidden="true"></i>
-              <p>Dokumen Diproses</p>
+            <a href="<?php echo site_url("dokumen");?>" class="nav-link">
+                <i class="nav-icon fas fa-file" aria_hidden="true"></i>
+                <p>Daftar Dokumen</p><i class="fas fa-angle-right right"></i>
             </a>
-          </li>
-          <li class="nav-item">
-            <a href="<?php echo site_url("DokumenSelesai/read");?>" class="nav-link">
-              <i class="nav-icon fa fa-check" aria_hidden="true"></i>
-              <p>Dokumen Selesai</p>
-            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo site_url("DokumenDiproses/read");?>" class="nav-link">
+                  <i class="nav-icon fa fa-archive"></i>
+                  <p>Dokumen Diproses</p>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo site_url("DokumenSelesai/read");?>" class="nav-link">
+                  <i class="nav-icon fa fa-check"></i>
+                  <p>Dokumen Selesai</p>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="<?php echo site_url("Administrasi/user");?>" class="nav-link">
-              <i class="nav-icon fas fa-archive"></i>
+              <i class="nav-icon fa fa-address-book"></i>
               <p>
                 Admnistrasi
               </p>

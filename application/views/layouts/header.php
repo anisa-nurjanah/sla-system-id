@@ -15,7 +15,7 @@
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-left">
       <div class="image" style="margin-left:auto! Important">
-          <!-- <img src="<?=template('dist/img/BNI.png')?>" width="156" height="82" alt="User Image"> -->
+          <img src="<?=template('dist/img/BNI.png')?>" width="156" height="82" alt="User Image">
       </div>
     </ul>
 

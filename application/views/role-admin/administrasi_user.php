@@ -5,12 +5,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Dokumen Selesai</h1>
+            <h1>Administrasi</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="<?=template('beranda_admin')?>">Dokumen Selesai</a></li>
-              <li class="breadcrumb-item active">Dokumen Selesai</li>
+              <li class="breadcrumb-item active">Administrasi</li>
             </ol>
           </div>
         </div>
@@ -25,7 +25,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Dokumen yang telah selesai diproses</h3>
+                <h3 class="card-title">Daftar Pengguna</h3>
                   <div class="card-tools">
                     <div class="input-group input-group-sm">
                       <input type="text" class="form-control" placeholder="Cari Dokumen">
