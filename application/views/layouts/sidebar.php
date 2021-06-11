@@ -25,7 +25,7 @@
               <li class="nav-item">
                 <a href="<?php echo site_url("BerandaSekkom");?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>SEK KOM</p>
+                  <p>SEKKOM</p>
                 </a>
               </li>
               <li class="nav-item">

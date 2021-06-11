@@ -9,4 +9,10 @@ class BerandaPimpinan extends CI_Controller {
 		$data['content'] = $this->load->view('Pimpinan/beranda_pimpinan','',TRUE);
 		$this->load->view('layouts/html', $data);
 	}
+	public function card()
+	{
+		// Mengalihkan ke fungsi read detail_dokumen_pemimpin
+		$data['content'] = $this->load->view('Pimpinan/detail_dokumen_pemimpin','',TRUE);
+		$this->load->view('layouts/html', $data);
+	}
 }

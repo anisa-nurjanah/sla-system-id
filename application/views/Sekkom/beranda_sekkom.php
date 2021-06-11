@@ -6,17 +6,16 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0">Beranda Sekretaris Komite</h1>
-          </div><!-- /.col -->
+          </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <!-- <li class="breadcrumb-item"><a href="#">Home</a></li> -->
               <li class="breadcrumb-item active">Beranda Sekretaris Komite</li>
             </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- /.content-header -->
   
   <!-- Main content -->
   <section class="content">
@@ -34,7 +33,7 @@
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
               </div>
-              <a href="#" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
+              <a href="<?php echo site_url("BerandaSekkom/card");?>" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -50,7 +49,7 @@
               <div class="icon">
                 <i class="ion ion-person-orange"></i>
               </div>
-              <a href="#" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
+              <a href="<?php echo site_url("BerandaSekkom/card");?>" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->

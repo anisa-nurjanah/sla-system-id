@@ -5,16 +5,16 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Administrasi</h1>
+            <h1>Daftar Dokumen</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="<?php echo site_url('#')?>">Dokumen Selesai</a></li>
-              <li class="breadcrumb-item active">Administrasi</li>
+              <li class="breadcrumb-item"><a href="<?=template('Beranda_pimpinan')?>">Beranda</a></li>
+              <li class="breadcrumb-item active">Dokumen Diproses</li>
             </ol>
           </div>
         </div>
-      </div><!-- /.container-fluid -->
+      </div>
     </section>
 
     
@@ -24,35 +24,41 @@
         <div class="row">
           <div class="col-12">
             <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Daftar Pengguna</h3>
+                <div class="card-header">
+                    <h3 class="card-title">Dokumen yang sedang diproses</h3>
                   <div class="card-tools">
-                    <div class="input-group input-group-sm">
-                      <input type="text" class="form-control" placeholder="Cari Dokumen">
-                      <div class="input-group-append">
-                        <div class="btn btn-primary">
-                          <i class="fas fa-search"></i>
+                    <!-- test -->
+                      <!-- div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="Cari Dokumen">
+                        <div class="input-group-append">
+                          <div class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                          </div>
                         </div>
-                      </div>
-                    </div>
+                      </div> test -->
                   </div>
                 </div>
+
               <div class="card-body">
                 <table class="table table-striped" id="datatables" width="100%" data-page-length='5' data-length-change='false'>
                   <thead>
                     <tr class="bg-table">
                       <th scope="col">No</th>
-                      <th scope="col">NPP</th>
-                      <th scope="col">Nama</th>
-                      <th scope="col">Posisi</th>
+                      <th scope="col">No Dokumen</th>
+                      <th scope="col">Nama Dokumen</th>
+                      <th scope="col">Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <th scope="row">1</th>
-                      <td>PO11145</td>
-                      <td>Dylan</td>
-                      <td>Analyst</td>
+                      <td>OPK/MAK/001</td>
+                      <td>Dokumen Kredit</td>
+                      <td>
+                        <a href="<?=site_url('DokumenDiproses/detail')?>" class="btn btn-green">
+                          Lihat Detail
+                        </a>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -63,10 +69,11 @@
       </div>
     </section>
 </div>
-<!-- <script>
+
+<script>
     $('#datatables').DataTable( {
         language: {
-            searchPlaceholder: "Cari Pengguna"
+            searchPlaceholder: "Cari Dokumen"
         }
     });
-</script>  -->
+</script>

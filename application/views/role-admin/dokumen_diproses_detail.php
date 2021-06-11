@@ -9,7 +9,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="<?=template('beranda_admin')?>">Beranda</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo site_url("Beranda");?>">Beranda</a></li>
               <li class="breadcrumb-item active">Dokumen diproses</li>
             </ol>
           </div>
@@ -90,7 +90,5 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- /.content -->
+    </section>
 </div>
-</script> 

@@ -1,5 +1,5 @@
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
+  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -9,7 +9,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="<?=template('beranda_admin')?>">Beranda</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo site_url('beranda')?>">Dokumen Diproses</a></li>
               <li class="breadcrumb-item active">Dokumen Diproses</li>
             </ol>
           </div>
@@ -39,7 +39,7 @@
                   </div>
                 </div>
 
-        <div class="card-body">
+            <div class="card-body">
                 <table class="table table-striped" id="datatables" width="100%" data-page-length='5' data-length-change='false'>
                   <thead>
                     <tr class="bg-table">
@@ -73,9 +73,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- /.content -->
-</div>
+    </section>
+  </div>
  <script>
     $('#datatables').DataTable( {
         language: {

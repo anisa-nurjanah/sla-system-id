@@ -9,4 +9,10 @@ class BerandaSekretaris extends CI_Controller {
 		$data['content'] = $this->load->view('Sekretaris/beranda_sekretaris','',TRUE);
 		$this->load->view('layouts/html', $data);
 	}
+	public function card()
+	{
+		// Mengalihkan ke fungsi read
+		$data['content'] = $this->load->view('Sekretaris/detail_dokumen_sekretaris','',TRUE);
+		$this->load->view('layouts/html', $data);
+	}
 }
