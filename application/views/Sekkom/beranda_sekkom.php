@@ -54,11 +54,11 @@
           </div>
           <!-- ./col -->
           <div class="card-footer clearfix">
-                <button type="button" class="btn btn-primary float-right"><i class="fas fa-plus"></i> Tambah Dokumen Kredit Baru</button>
-              </div>
+            <button type="button" class="btn btn-primary float-right">
+              <a href="<?php echo site_url('#');?>" class="btn btn-primary">Tambah Dokumen Kredit Baru</a>
+            </button>
           </div>
+        </div>
       </div>
-</section>
-<!-- Main Content -->
+  </section>
 </div>
-<!-- content wrapper -->

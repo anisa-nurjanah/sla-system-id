@@ -27,14 +27,6 @@
               <div class="card-header">
                 <h3 class="card-title">Daftar Pengguna</h3>
                   <div class="card-tools">
-                    <div class="input-group input-group-sm">
-                      <input type="text" class="form-control" placeholder="Cari Dokumen">
-                      <div class="input-group-append">
-                        <div class="btn btn-primary">
-                          <i class="fas fa-search"></i>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               <div class="card-body">
@@ -44,6 +36,7 @@
                       <th scope="col">No</th>
                       <th scope="col">NPP</th>
                       <th scope="col">Nama</th>
+                      <th scope="col">Email</th>
                       <th scope="col">Posisi</th>
                     </tr>
                   </thead>
@@ -52,6 +45,7 @@
                       <th scope="row">1</th>
                       <td>PO11145</td>
                       <td>Dylan</td>
+                      <td>Dylan111@gmail.com</td>
                       <td>Analyst</td>
                     </tr>
                   </tbody>
@@ -63,10 +57,10 @@
       </div>
     </section>
 </div>
-<!-- <script>
+<script>
     $('#datatables').DataTable( {
         language: {
             searchPlaceholder: "Cari Pengguna"
         }
     });
-</script>  -->
+</script>

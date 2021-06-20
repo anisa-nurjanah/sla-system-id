@@ -24,14 +24,10 @@
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="card-footer clearfix">
-                <button type="button" class="btn btn-primary float-right">
-                  <i class="fas fa-plus"></i> Tambah User</button>
-              </div>
+            <a href="<?php echo site_url('Beranda/insert');?>" class="btn btn-primary">Tambah User</a>
           </div>
           <!-- ./col -->
         </div>
       </div>
-</section>
-<!-- Main Content -->
+  </section>
 </div>
-<!-- content wrapper -->

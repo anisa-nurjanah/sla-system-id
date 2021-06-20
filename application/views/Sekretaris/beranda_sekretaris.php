@@ -80,9 +80,7 @@
               <a href="#" class="alert-link" style="background-color:#007BFF;">#No. Dokumen</a>
                tidak sesuai dengan data yang ada
           </div>
-        </div>
+      </div>
       <!-- Akhir Notifikasi Beranda Sekretaris -->
-</section>
-<!-- Main Content -->
+  </section>
 </div>
-<!-- content wrapper -->
