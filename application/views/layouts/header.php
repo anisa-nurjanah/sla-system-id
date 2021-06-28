@@ -14,10 +14,10 @@
   <!-- Navbar Gambar BNI-->
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-left">
-      <div class="image" style="margin-left:auto! Important">
-          <img src="<?=template('dist/img/BNI.png')?>" width="156" height="82" alt="User Image">
-      </div>
+      <img src="<?=template('dist/img/bnilogo1.png')?>" style="opacity: .8">
+      <!-- <span class="brand-text font-weight-light">AdminLTE 3</span> -->
     </ul>
+   
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
