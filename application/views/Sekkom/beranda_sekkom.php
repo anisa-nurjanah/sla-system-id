@@ -5,11 +5,10 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Beranda Sekretaris Komite</h1>
+            <h1 class="m-0">Dashboard Sekretaris Komite</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <!-- <li class="breadcrumb-item"><a href="#">Home</a></li> -->
               <li class="breadcrumb-item active">Beranda Sekretaris Komite</li>
             </ol>
           </div>
@@ -17,48 +16,39 @@
       </div>
     </div>
   
-  <!-- Main content -->
-  <section class="content">
+    <!-- Main content -->
+    <section class="content">
       <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
         <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="card card-orange">
+              <div class="card-header">
+                <h3 class="card-title">Formulir Dokumen Baru</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Nomor PAK</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nomor PAK">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Nama PAK</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nama PAK">
+                  </div>
+              
+                <!-- /.card-body -->
 
-          <div class="col-lg-6 col-6">
-            <!-- small box -->
-            <div class="small-box bg-orange">
-              <div class="inner">
-                <h3>154</h3>
-                <p>Dokumen Diproses</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="<?php echo site_url("BerandaSekkom/card");?>" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
             </div>
-          </div>
-          <!-- ./col -->
-
-
-          <div class="col-lg-6 col-6">
-            <!-- small box -->
-            <div class="small-box bg-orange">
-              <div class="inner">
-                <h3>1000</h3>
-                <p>Dokumen Selesai</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-person-orange"></i>
-              </div>
-              <a href="<?php echo site_url("BerandaSekkom/card");?>" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="card-footer clearfix">
-            <button type="button" class="btn btn-primary float-right">
-              <a href="<?php echo site_url('#');?>" class="btn btn-primary">Tambah Dokumen Kredit Baru</a>
-            </button>
-          </div>
-        </div>
-      </div>
-  </section>
+            <!-- /.card -->
 </div>
+</div>
+</div>
+</section>

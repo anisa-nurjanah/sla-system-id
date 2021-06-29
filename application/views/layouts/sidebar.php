@@ -103,26 +103,7 @@
                 Admnistrasi
               </p>
             </a>
-            <!-- <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="<?php echo site_url("administrasi/doc_baru");?>" class="nav-link">
-                  <i class="fa fa-envelope nav-icon"></i>
-                  <p>Dokumen Baru</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo site_url("administrasi/doc_selesai");?>" class="nav-link">
-                  <i class="fa fa-envelope-open nav-icon"></i>
-                  <p>Dokumen Diproses</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo site_url("administrasi/user");?>" class="nav-link">
-                  <i class="fa fa-user nav-icon"></i>
-                  <p>Administrasi User</p>
-                </a>
-              </li>
-            </ul> -->
+
           </li>
         </ul>
       </nav>

@@ -2,6 +2,7 @@
 <div class="wrapper">
 <!-- Navbar -->
 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+
   <div class="navbar-header">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
@@ -21,7 +22,32 @@
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
-
+    <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-item">
+          <span class="float-right text-muted text-sm">3 mins</span>
+          <p> <i class="fas fa-file mr-2"></i> <a href="<?php echo site_url("dokumen");?>">OPK/MAK/001</a> telah diterima dari Yunita (Sekretaris Komite)</p>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-item">
+          <span class="float-right text-muted text-sm">3 mins</span>
+          <p> <i class="fas fa-file mr-2"></i> <a href="<?php echo site_url("dokumen");?>">OPK/MAK/001</a> telah diterima dari Yunita (Sekretaris Komite)</p>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-item">
+          <span class="float-right text-muted text-sm">3 mins</span>
+          <p> <i class="fas fa-file mr-2"></i> <a href="<?php echo site_url("dokumen");?>">OPK/MAK/001</a> telah diterima dari Yunita (Sekretaris Komite)</p>
+          </div>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
       <!-- Bagian Navbar Search -->
       <li class="nav-item">
         <a class="nav-link" data-widget="navbar-search" href="#" role="button">
