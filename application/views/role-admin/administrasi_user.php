@@ -36,7 +36,6 @@
                       <th scope="col">No</th>
                       <th scope="col">NPP</th>
                       <th scope="col">Nama</th>
-                      <th scope="col">Email</th>
                       <th scope="col">Posisi</th>
                     </tr>
                   </thead>
@@ -45,7 +44,6 @@
                       <th scope="row">1</th>
                       <td>PO11145</td>
                       <td>Dylan</td>
-                      <td>Dylan111@gmail.com</td>
                       <td>Analyst</td>
                     </tr>
                   </tbody>

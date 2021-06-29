@@ -56,7 +56,7 @@
                       <td>PT. Djarum</td>
                       <td>Disposisi</td>
                       <td>
-                        <a href="<?=site_url('DokumenSelesai/detail')?>" class="btn btn-green">
+                        <a href="<?=site_url('DokumenSelesai/detail')?>" class="btn btn-success">
                           Lihat Detail
                         </a>
                       </td>

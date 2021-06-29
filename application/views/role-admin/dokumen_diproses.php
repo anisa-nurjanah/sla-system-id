@@ -27,15 +27,7 @@
               <div class="card-header">
                 <h3 class="card-title">Dokumen yang sedang diproses</h3>
                   <div class="card-tools">
-                    <!-- test -->
-                      <!-- div class="input-group input-group-sm">
-                        <input type="text" class="form-control" placeholder="Cari Dokumen">
-                        <div class="input-group-append">
-                          <div class="btn btn-primary">
-                            <i class="fas fa-search"></i>
-                          </div>
-                        </div>
-                      </div> test -->
+
                   </div>
                 </div>
 
@@ -61,7 +53,7 @@
                       <td>Pembuatan SKK</td>
                       <td>Dodi (Analyst)</td>
                       <td>
-                        <a href="<?=site_url('DokumenDiproses/detail')?>" class="btn btn-green">
+                        <a href="<?=site_url('DokumenDiproses/detail')?>" class="btn btn-success">
                           Lihat Detail
                         </a>
                       </td>
