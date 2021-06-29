@@ -45,11 +45,11 @@
                       <td>OPK/MAK/001</td>
                       <td>Dokumen Kredit</td>
                       <td>Synta (Sekretaris)</td>
-                      <td><div class="btn-group">
-
+                      <td>
                           <a href="<?=site_url('DokumenDiproses/detail')?>" class="btn btn-success">
                             <i class="far fa-file nav-icon"></i>  Lihat Detail
                           </a>
+                          |
                           <a href="<?=site_url('BerandaSekretaris/ubah_dokumen')?>" class="btn btn-primary">
                             <i class="far fa-edit nav-icon"></i>  Ubah Dokumen
                           </a>

@@ -80,7 +80,7 @@
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <!-- <span class="dropdown-item dropdown-header">Notifications</span> -->
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
+          <a href="<?php echo site_url("user/reset_password");?>" class="dropdown-item">
             <i class="fas fa-unlock-alt mr-2"></i> Reset Password
             <!-- <span class="float-right text-muted text-sm">3 mins</span> -->
           </a>
