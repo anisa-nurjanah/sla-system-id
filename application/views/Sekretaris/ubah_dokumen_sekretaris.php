@@ -5,11 +5,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Beranda Sekretaris Komite</h1>
+            <h1 class="m-0">OPK/MAK/001</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item active">Beranda Sekretaris Komite</li>
+              <li class="breadcrumb-item">Sekretaris</li>
+              <li class="breadcrumb-item active">OPK/MAK/001</li>
             </ol>
           </div>
         </div>
@@ -25,7 +26,7 @@
             <!-- general form elements -->
             <div class="card card-orange">
               <div class="card-header">
-                <h3 class="card-title">Formulir Dokumen Baru</h3>
+                <h3 class="card-title">Sekretaris Komite [#Nama Sekretaris Komite]</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
@@ -39,6 +40,27 @@
                     <label for="exampleInputPassword1">Nama PAK</label>
                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nama PAK">
                   </div>
+              
+                <!-- /.card-body -->
+              </form>
+            </div>
+            <!-- /.card -->
+            </div>
+
+            <!-- general form elements -->
+            <div class="card card-orange">
+              <div class="card-header">
+                <h3 class="card-title">Sekretaris [#Nama Sekretaris]</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label>Tanggal Masuk Dokumen</label>
+                    <input type="date" class="form-control">
+                  </div>
+                </div>
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>

@@ -31,39 +31,40 @@
               <div class="card-body">
                 <table id="example1" class="table table-bordered">
                   <thead>
-                  <tr>
-                    <th>Nomor</th>
-                    <th>Nomor Dokumen</th>
-                    <th>Nama Dokumen</th>
-                    <th>Posisi</th>
-                    <th>Aksi</th>
-                  </tr>
+                    <tr>
+                      <th>Nomor</th>
+                      <th>Nomor Dokumen</th>
+                      <th>Nama Dokumen</th>
+                      <th>Posisi</th>
+                      <th>Aksi</th>
+                    </tr>
                   </thead>
                   <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>OPK/MAK/001</td>
-                    <td>Dokumen Kredit</td>
-                    <td>Synta (Sekretaris)</td>
-                    <td><div class="btn-group">
+                    <tr>
+                      <td>1</td>
+                      <td>OPK/MAK/001</td>
+                      <td>Dokumen Kredit</td>
+                      <td>Synta (Sekretaris)</td>
+                      <td><div class="btn-group">
 
-                        <a href="<?=site_url('DokumenDiproses/detail')?>" class="btn btn-success">
-                        <i class="far fa-file nav-icon"></i>        Lihat Detail
-                        </a>
-                        <a href="<?=site_url('BerandaSekretaris/card')?>" class="btn btn-primary">
-                        <i class="far fa-edit nav-icon"></i>        Ubah Dokumen
-                        </a>
-                        </a>
-                  </tr>
+                          <a href="<?=site_url('DokumenDiproses/detail')?>" class="btn btn-success">
+                            <i class="far fa-file nav-icon"></i>  Lihat Detail
+                          </a>
+                          <a href="<?=site_url('BerandaSekretaris/ubah_dokumen')?>" class="btn btn-primary">
+                            <i class="far fa-edit nav-icon"></i>  Ubah Dokumen
+                          </a>
+                    </tr>
                   </tbody>
-                  
                 </table>
               </div>
-              <!-- /.card-body -->
             </div>
-            <!-- /.card -->
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
 
-            <script>
+<script>
   $(function () {
     $("#example1").DataTable({
       "responsive": true, "lengthChange": false, "autoWidth": false,

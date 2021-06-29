@@ -9,10 +9,10 @@ class BerandaDGM extends CI_Controller {
 		$data['content'] = $this->load->view('DGM/beranda_dgm','',TRUE);
 		$this->load->view('layouts/html', $data);
 	}
-	public function card()
+	public function ubah_dokumen()
 	{
 		// Mengalihkan ke fungsi read
-		$data['content'] = $this->load->view('DGM/detail_dokumen_dgm','',TRUE);
+		$data['content'] = $this->load->view('DGM/ubah_dokumen_dgm','',TRUE);
 		$this->load->view('layouts/html', $data);
 	}
 }

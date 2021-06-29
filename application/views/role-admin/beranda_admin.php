@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard Admin</h1>
+            <h1 class="m-0">Beranda Admin</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -40,19 +40,20 @@
                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nama PAK">
                   </div>
                   <div class="form-group">
-                  <label>Posisi</label>
-                  <div class="select2-purple">
-                  <select class="form-control select2bs4" style="width: 100%;">
-                      <option>Admin</option>
-                      <option>Sekretaris Komite</option>
-                      <option>Sekretaris</option>
-                      <option>Sekretaris Bisnis</option>
-                      <option>Pemimpin</option>
-                      <option>DGM/GM</option>
-                      <option>Pengelola</option>
-                      <option>Analyst</option>
-                    </select>
-                  </div>
+                    <label>Posisi</label>
+                    <div class="select2-purple">
+                      <select class="form-control select2bs4" style="width: 100%;">
+                          <option>-----Pilih Posisi-----</option>
+                          <option>Admin</option>
+                          <option>Sekretaris Komite</option>
+                          <option>Sekretaris</option>
+                          <option>Sekretaris Bisnis</option>
+                          <option>Pemimpin</option>
+                          <option>DGM/GM</option>
+                          <option>Pengelola</option>
+                          <option>Analyst</option>
+                      </select>
+                    </div>
                   </div>
                 <!-- /.card-body -->
 
@@ -61,8 +62,8 @@
                 </div>
               </form>
             </div>
-            <!-- /.card -->
+          </div>
+        </div>
+      </div>
+    </section>
 </div>
-</div>
-</div>
-</section>

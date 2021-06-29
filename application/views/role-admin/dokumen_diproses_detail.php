@@ -29,7 +29,7 @@
               
              
               <div class="card-body">
-              <table class="table">
+                    <table class="table">
                       <tr>
                         <th >Tanggal Masuk Dokumen</th>
                         <td>1 Januari 2019</td>
@@ -53,7 +53,7 @@
                     </table>
               
                 <br>
-                  <table class="table table-striped"  width="100%" data-page-length='5' data-length-change='false'>
+                  <table class="table table-striped" width="100%" data-page-length='5' data-length-change='false'>
                     <thead>
                       <tr class="stats-card">
                         <th scope="col">Kegiatan</th>
@@ -92,3 +92,21 @@
       </div>
     </section>
 </div>
+
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>

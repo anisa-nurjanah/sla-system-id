@@ -9,10 +9,10 @@ class BerandaAnalyst extends CI_Controller {
 		$data['content'] = $this->load->view('Analyst/beranda_analyst','',TRUE);
 		$this->load->view('layouts/html', $data);
 	}
-	public function card()
+	public function ubah_dokumen()
 	{
 		// Mengalihkan ke fungsi read
-		$data['content'] = $this->load->view('Analyst/detail_dokumen_analyst','',TRUE);
+		$data['content'] = $this->load->view('Analyst/ubah_dokumen_analyst','',TRUE);
 		$this->load->view('layouts/html', $data);
 	}
 }

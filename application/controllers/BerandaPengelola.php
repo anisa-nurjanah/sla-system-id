@@ -9,10 +9,10 @@ class BerandaPengelola extends CI_Controller {
 		$data['content'] = $this->load->view('Pengelola/beranda_pengelola','',TRUE);
 		$this->load->view('layouts/html', $data);
 	}
-	public function card()
+	public function ubah_dokumen()
 	{
 		// Mengalihkan ke fungsi read
-		$data['content'] = $this->load->view('Pengelola/detail_dokumen_pengelola','',TRUE);
+		$data['content'] = $this->load->view('Pengelola/ubah_dokumen_pengelola','',TRUE);
 		$this->load->view('layouts/html', $data);
 	}
 }

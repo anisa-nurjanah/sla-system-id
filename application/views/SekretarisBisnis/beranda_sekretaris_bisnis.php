@@ -13,66 +13,72 @@
               <li class="breadcrumb-item active">Beranda Sekretaris Bisnis</li>
             </ol>
           </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-  
-  <!-- Main content -->
-  <section class="content">
-      <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
-        <div class="row">
-
-          <div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-orange">
-              <div class="inner">
-                <h3>2</h3>
-                <p>Dokumen Baru</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="<?php echo site_url("BerandaSekretarisBisnis/card");?>" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-
-
-          <div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-orange">
-              <div class="inner">
-                <h3>154</h3>
-                <p>Dokumen Diproses</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="<?php echo site_url("BerandaSekretarisBisnis/card");?>" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-
-
-          <div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-orange">
-              <div class="inner">
-                <h3>1000</h3>
-                <p>Dokumen Selesai</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-person-orange"></i>
-              </div>
-              <a href="<?php echo site_url("BerandaSekretarisBisnis/card");?>" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          </div>
+        </div>
       </div>
-</section>
-<!-- Main Content -->
+    </div>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-orange">
+              <div class="card-header">
+                <h3 class="card-title">Daftar Dokumen yang Baru Anda Terima</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Nomor</th>
+                      <th>Nomor Dokumen</th>
+                      <th>Nama Dokumen</th>
+                      <th>Posisi</th>
+                      <th>Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>OPK/MAK/001</td>
+                      <td>Dokumen Kredit</td>
+                      <td>Bayu (Sekretaris Komite)</td>
+                      <td>
+                        <div class="btn-group">
+                          <a href="<?=site_url('DokumenDiproses/detail')?>" class="btn btn-success">
+                            <i class="far fa-file nav-icon"></i>  Lihat Detail
+                          </a>
+                          <a href="<?=site_url('BerandaSekretarisBisnis/ubah_dokumen')?>" class="btn btn-primary">
+                            <i class="far fa-edit nav-icon"></i>  Ubah Dokumen
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 </div>
-<!-- content wrapper -->
+
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
