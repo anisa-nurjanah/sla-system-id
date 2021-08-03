@@ -37,6 +37,7 @@
                       <th scope="col">NPP</th>
                       <th scope="col">Nama</th>
                       <th scope="col">Posisi</th>
+                      <th scope="col">Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -45,6 +46,11 @@
                       <td>PO11145</td>
                       <td>Dylan</td>
                       <td>Analyst</td>
+                      <td>
+                          <a href="#" class="btn btn-danger" onClick="return confirm('Apakah Anda Yakin Ingin Menghapus Pengguna Ini?')">
+                            <i class="fa fa-trash nav-icon"></i>  Hapus Pengguna
+                          </a>
+                      </td>
                     </tr>
                   </tbody>
                 </table>

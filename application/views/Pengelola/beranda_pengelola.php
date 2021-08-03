@@ -45,8 +45,7 @@
                       <td>OPK/MAK/001</td>
                       <td>Dokumen Kredit</td>
                       <td>Sartika (Pemimpin)</td>
-                      <td>
-
+                        <td>
                           <a href="<?=site_url('DokumenDiproses/detail')?>" class="btn btn-success">
                             <i class="far fa-file nav-icon"></i>  Lihat Detail
                           </a>
@@ -54,6 +53,7 @@
                           <a href="<?=site_url('BerandaPengelola/ubah_dokumen')?>" class="btn btn-primary">
                             <i class="far fa-edit nav-icon"></i>  Ubah Dokumen
                           </a>
+                        </td>
                     </tr>
                   </tbody>
                 </table>
