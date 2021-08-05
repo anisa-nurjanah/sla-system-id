@@ -33,11 +33,11 @@
               <form>
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Nomor PAK</label>
+                    <label for="exampleInputEmail1">Nomor Dokumen</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nomor PAK">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Nama PAK</label>
+                    <label for="exampleInputPassword1">Nama Debitur</label>
                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nama PAK">
                   </div>
               
@@ -61,6 +61,12 @@
                     <input type="date" class="form-control">
                   </div>
                 </div>
+				<label>Pilih DGM/GM</label>
+                    <select class="form-control select2" style="width: 100%;">
+                        <option>------Pilih pemimpin------</option>
+                        <option>Yanar Siswanto</option>
+                        <option>Marhaento JP</option>
+                                            </select>
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>

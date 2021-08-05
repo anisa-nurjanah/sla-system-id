@@ -50,7 +50,7 @@
             <!-- general form elements -->
             <div class="card card-orange">
               <div class="card-header">
-                <h3 class="card-title">Sekretaris Bisnis[#Nama Sekretaris]</h3>
+                <h3 class="card-title">Sekretaris [#Nama Sekretaris]</h3>
               </div>
               <!-- form start -->
                 <form>

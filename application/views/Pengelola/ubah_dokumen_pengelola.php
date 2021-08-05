@@ -33,11 +33,11 @@
               <form>
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Nomor PAK</label>
+                    <label for="exampleInputEmail1">Nomor Dokumen</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nomor PAK">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Nama PAK</label>
+                    <label for="exampleInputPassword1">Nama Debitur</label>
                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nama PAK">
                   </div>
               </form>
@@ -47,7 +47,7 @@
             <!-- general form elements -->
             <div class="card card-orange">
               <div class="card-header">
-                <h3 class="card-title">Sekretaris Bisnis[#Nama Sekretaris]</h3>
+                <h3 class="card-title">Sekretaris [#Nama Sekretaris]</h3>
               </div>
               <!-- form start -->
                 <form>
@@ -93,16 +93,7 @@
                         </label>
                         <input class="form-control" type="text" placeholder="Default input">
                     </div>
-                    <label>Pilih Pengelola</label>
-                    <select class="form-control select2" style="width: 100%;">
-                        <option>------Pilih Pengelola------</option>
-                        <option>Alabama</option>
-                        <option>Alaska</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
-                    </select>
+                    </div>
                 </form>
             </div>
             </div>
