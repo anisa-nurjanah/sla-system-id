@@ -5,11 +5,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Beranda Sekretaris Komite</h1>
+            <h1 class="m-0">Beranda Bisnis</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item active">Beranda Sekretaris Komite</li>
+              <li class="breadcrumb-item active">Beranda Bisnis</li>
             </ol>
           </div>
         </div>
@@ -32,12 +32,16 @@
               <form>
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Nomor PAK</label>
+                    <label for="exampleInputEmail1">Nomor Dokumen</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nomor PAK">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Nama PAK</label>
+                    <label for="exampleInputPassword1">Nama Debitur</label>
                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nama PAK">
+                  </div>
+				  <div class="form-group">
+                    <label for="exampleInputPassword1">File NK3</label>
+                    <button type="submit" class="btn btn-primary">Upload</button>
                   </div>
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
