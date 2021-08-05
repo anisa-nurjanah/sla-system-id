@@ -16,7 +16,7 @@
 
             <form action="#" method="post">
               <div class="input-group mb-3">
-                <input type="email" class="form-control" placeholder="NPP">
+                <input class="form-control" type="text" placeholder="NPP">
                 <div class="input-group-append">
                   <div class="input-group-text">
                     <span class="fas fa-envelope"></span>
