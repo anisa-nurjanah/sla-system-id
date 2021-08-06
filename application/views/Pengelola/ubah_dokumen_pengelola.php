@@ -95,21 +95,28 @@
                     </div>
                     </div>
                 </form>
-            </div>
-            </div>
             
+            </div>
+			
+            <form>
             <div class="card card-orange">
               <div class="card-header">
                 <h3 class="card-title">Pengelola[#Nama Pengelola]</h3>
               </div>
-                <form>
+                
                     <div class="card-body">
                         <div class="form-group">
                             <label>
                                 Catatan
                             </label>
-                            <input class="form-control" type="text" placeholder="Default input">
+                            <input class="form-control" type="text" placeholder=" Default input">
                         </div>
+						</div>
+						
+						
+						
+						<div class="card-body">
+                        <div class="form-group">
                         <label>Pilih Analyst</label>
                         <select class="form-control select2" style="width: 100%;">
                             <option>------Pilih Analyst------</option>
@@ -120,6 +127,8 @@
                             <option>Texas</option>
                             <option>Washington</option>
                         </select>
+						</div>
+						</div>
                         <div class="card-footer">
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>

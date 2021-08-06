@@ -61,12 +61,16 @@
                     <input type="date" class="form-control">
                   </div>
                 </div>
+				<div class="card-body">
+                        <div class="form-group">
 				<label>Pilih DGM/GM</label>
                     <select class="form-control select2" style="width: 100%;">
                         <option>------Pilih pemimpin------</option>
                         <option>Yanar Siswanto</option>
                         <option>Marhaento JP</option>
                                             </select>
+											</div>
+                    </div>
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
