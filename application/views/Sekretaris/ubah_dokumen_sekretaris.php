@@ -56,12 +56,25 @@
                     <label>Tanggal Masuk Dokumen</label>
                     <input type="date" class="form-control">
                   </div>
+<<<<<<< HEAD
                   <label>Pilih DGM/GM</label>
+=======
+                </div>
+				<div class="card-body">
+                        <div class="form-group">
+				<label>Pilih DGM/GM</label>
+>>>>>>> d51e18dbfe0da08386a1e37e83b953e1607e0e8b
                     <select class="form-control select2" style="width: 100%;">
                         <option>------Pilih pemimpin------</option>
                         <option>Yanar Siswanto</option>
                         <option>Marhaento JP</option>
+<<<<<<< HEAD
                     </select>
+=======
+                                            </select>
+											</div>
+                    </div>
+>>>>>>> d51e18dbfe0da08386a1e37e83b953e1607e0e8b
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>

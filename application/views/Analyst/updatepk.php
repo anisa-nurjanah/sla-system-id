@@ -26,17 +26,21 @@
             <!-- general form elements -->
             <div class="card card-orange">
               <div class="card-header">
-                <h3 class="card-title">Sekretaris Komite [#Nama Sekretaris Komite]</h3>
+                <h3 class="card-title">Data Dokumen</h3>
               </div>
               <form>
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Nomor Dokumen</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nomor PAK">
+                    <label for="exampleInputEmail1">Nomor SKK</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nomor SKK">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Nama Debitur</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nama PAK">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nama Debitur">
+                  </div>
+				   <div class="form-group">
+                    <label for="exampleInputPassword1">Maksimum</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Maksimum">
                   </div>
               </form>
             </div>
@@ -122,14 +126,6 @@
                   <form>
                     <div class="card-body">
                       <div class="form-group">
-					  <div class="form-group">
-                        <label for="exampleInputPassword1">Nomor Dokumen</label>
-                        <input class="form-control" type="text" placeholder="Default input">
-                      </div>
-					  <div class="form-group">
-                        <label for="exampleInputPassword1">No SKK</label>
-                        <input class="form-control" type="text" placeholder="Default input">
-                      </div>
                         <label for="exampleInputEmail1">Nama Debitur</label>
                         <input class="form-control" type="text" placeholder="Default input">
                       </div>
@@ -145,7 +141,6 @@
                         <label for="exampleInputPassword1">Maksimum</label>
                         <input class="form-control" type="text" placeholder="Default input">
                       </div>
-					   
                       <div class="form-group">
                         <label>
                             Catatan
@@ -193,6 +188,24 @@
                               <input class="form-check-input" type="checkbox">
                               <label class="form-check-label">Kelengkapan 6</label>
                             </div>
+							
+							
+							 <div class="card card-orange">
+              <div class="card-header">
+                <h3 class="card-title">PK</h3>
+              </div>
+              <!-- form start -->
+                <form>
+                    <div class="card-body">
+                    <div class="form-group">
+                        <label>
+                            Catatan
+                        </label>
+                        <input class="form-control" type="text" placeholder="Default input">
+                    </div>
+                </form>
+            </div>
+            </div>
                             <div class="card-footer">
                               <button type="submit" class="btn btn-primary">Submit</button>
                               <button type="submit" class="btn btn-danger">Tolak</button>
