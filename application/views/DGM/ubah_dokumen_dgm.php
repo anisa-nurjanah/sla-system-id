@@ -72,8 +72,9 @@
               <div class="card-header">
                 <h3 class="card-title">DGM/GM[#Nama DGM/GM]</h3>
               </div>
+              
               <!-- form start -->
-                <form>
+                  <form>
                     <div class="card-body">
                         <div class="form-group">
                             <label>
@@ -82,25 +83,25 @@
                             <input class="form-control" type="text" placeholder="Default input">
                         </div>
                     </div>
-					<div class="card-body">
+                      <div class="card-body">
                         <div class="form-group">
-						<label>Pilih Pengelola</label>
-                    <select class="form-control select2" style="width: 100%;">
-                        <option>------Pilih Pengelola------</option>
-                        <option>Alabama</option>
-                        <option>Alaska</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
-                    </select>
-					</div>
-                    </div>
-                    <div class="card-footer">
+                          <label>Pilih Pengelola</label>
+                            <select class="form-control select2" style="width: 100%;">
+                              <option>------Pilih Pengelola------</option>
+                              <option>Alabama</option>
+                              <option>Alaska</option>
+                              <option>Delaware</option>
+                              <option>Tennessee</option>
+                              <option>Texas</option>
+                              <option>Washington</option>
+                            </select>
+                        </div>
+                      </div>
+                      <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Submit</button>
                         <button type="submit" class="btn btn-danger">Tolak</button>
-                    </div>
-                </form>
+                      </div>
+                  </form>
             </div>
           </div>
         </div>

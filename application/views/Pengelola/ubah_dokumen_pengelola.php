@@ -85,7 +85,7 @@
               <div class="card-header">
                 <h3 class="card-title">Pimpinan[#Nama Pimpinan]</h3>
               </div>
-                <form>
+                  <form>
                     <div class="card-body">
                     <div class="form-group">
                         <label>
@@ -93,8 +93,7 @@
                         </label>
                         <input class="form-control" type="text" placeholder="Default input">
                     </div>
-                    </div>
-                </form>
+                  </form>
             </div>
             </div>
             

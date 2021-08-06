@@ -40,33 +40,28 @@
                     <label for="exampleInputPassword1">Nama Debitur</label>
                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nama PAK">
                   </div>
-              
-                <!-- /.card-body -->
+                </div>
               </form>
             </div>
-            <!-- /.card -->
-            </div>
-
+            
             <!-- general form elements -->
             <div class="card card-orange">
               <div class="card-header">
                 <h3 class="card-title">Sekretaris [#Nama Sekretaris]</h3>
               </div>
-              <!-- /.card-header -->
-              <!-- form start -->
+
               <form>
-                <div class="card-body">
+                  <div class="card-body">
                   <div class="form-group">
                     <label>Tanggal Masuk Dokumen</label>
                     <input type="date" class="form-control">
                   </div>
-                </div>
-				<label>Pilih DGM/GM</label>
+                  <label>Pilih DGM/GM</label>
                     <select class="form-control select2" style="width: 100%;">
                         <option>------Pilih pemimpin------</option>
                         <option>Yanar Siswanto</option>
                         <option>Marhaento JP</option>
-                                            </select>
+                    </select>
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>

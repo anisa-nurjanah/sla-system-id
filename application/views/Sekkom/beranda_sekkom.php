@@ -39,9 +39,9 @@
                     <label for="exampleInputPassword1">Nama Debitur</label>
                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nama PAK">
                   </div>
-				  <div class="form-group">
-                    <label for="exampleInputPassword1">File NK3</label>
-                    <button type="submit" class="btn btn-primary">Upload</button>
+                  <div class="form-group">
+                    <label for="uploadfilenk3">File NK3</label>
+                    <input type="file" class="form-control-file" id="uploadfilenk3">
                   </div>
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
