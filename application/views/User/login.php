@@ -13,10 +13,17 @@
         <div class="card" style="border:1px solid black">
           <div class="card-body login-card-body">
             <p class="login-box-msg">Sign In Untuk Masuk Ke Dalam Sistem</p>
+              <?php if($this->session->flashdata('danger')): ?>  
+                  <div class="alert alert-danger alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <h4><i class="icon fa fa-ban"></i> opps!</h4>
+                  <?php echo $this->session->flashdata('danger'); ?>
+                  </div>
+              <?php endif; ?>
 
-            <form action="#" method="post">
+            <form action="<?php echo base_url('User/prosess_login');?>" method="post">
               <div class="input-group mb-3">
-                <input class="form-control" type="text" placeholder="NPP">
+                <input class="form-control" type="text" name="username" placeholder="NPP">
                 <div class="input-group-append">
                   <div class="input-group-text">
                     <span class="fas fa-envelope"></span>
@@ -24,7 +31,7 @@
                 </div>
               </div>
               <div class="input-group mb-3">
-                <input type="password" class="form-control" placeholder="Password">
+                <input type="password" class="form-control" name="password" placeholder="Password">
                 <div class="input-group-append">
                   <div class="input-group-text">
                     <span class="fas fa-lock"></span>

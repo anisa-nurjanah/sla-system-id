@@ -5,3 +5,8 @@
 <script src="<?=template('dist/js/adminlte.min.js')?>"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?=template('dist/js/demo.js')?>"></script>
+<script>
+    $(document).ready(function(){
+        $('#example1').DataTable()
+    });
+</script>

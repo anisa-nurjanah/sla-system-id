@@ -24,7 +24,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">#Nomor Dokumen</h3>
+                <h3 class="card-title">#<?php echo $document->no_document;?></h3>
               </div>
               
              
@@ -32,23 +32,46 @@
                     <table class="table">
                       <tr>
                         <th >Tanggal Masuk Dokumen</th>
-                        <td>1 Januari 2019</td>
+                        <td><?php echo $document->date_created;?></td>
                       </tr>
                       <tr>
                         <th>Tanggal Terakhir Dokumen</th>
-                        <td>4 Januari 2019</td>
+                        <td><?php echo $document->date_update;?></td>
                       </tr>
                       <tr>
                         <th>Nama Debitur</th>
-                        <td>PT.Djarum</td>
+                        <td><?php echo $document->debitur;?></td>
                       </tr>
-                      <tr>
-                        <th>CIF Debitur</th>
-                        <td>CIF Debitur</td>
-                      </tr>
+                     
                       <tr>
                         <th>Status Dokumen</th>
-                        <td>Pembuatan SKK</td>
+                        <td>
+                            <?php 
+                            if($document->status==2){
+                              echo 'di prosess sekkom';
+                            }elseif($document->status==3){
+                              echo 'di prosess sekretaris';
+                            }elseif($document->status==4){
+                              echo 'di prosess sekretaris bisnis';
+                            }elseif($document->status==5){
+                              echo 'di prosess DGM / GM';
+                            }elseif($document->status==6){
+                              echo 'di prosess pimpinan';
+                            }elseif($document->status==7){
+                              echo 'di prosess pengelola';
+                            }elseif($document->status==8){
+                              echo 'di prosess analyst';
+                            }elseif($document->status==11){
+                              echo 'di prosess seketaris dari bisnis';
+                            }
+                            elseif($document->status==20){
+                              echo '<button class="btn btn-info"> Selesai </button>';
+                            }
+                            elseif($document->status==15){
+                              echo '<button class="btn btn-danger"> Ditolak ! </button>';
+                            }
+                          ?>
+                        </td>
                       </tr>
                     </table>
               
@@ -62,26 +85,26 @@
                       </tr>
                     </thead>
                     <tbody>
+                    <?php if($document->status == 15){?>
+                        <tr>
+                        <td>Dokumen telah Ditolak ! oleh</td>
+                        <td><b><?php echo $document->nama_pengguna;?></b></td>
+                        <td><?php echo $document->date_update;?></td>
+
+                        </tr>
+                      <?php };?>    
+                      <?php foreach($history as $row){;?>
+                   
+                     
+                      <?php if($row->id_penerus !==''){;?>
                       <tr>
-                        <td>Dokumen telah diterima oleh <b>analyst</b></td>
-                        <td>Lisa</td>
-                        <td>Senin, 19 April 2021 08:55</td>
+                        <td>Dokumen telah diterima oleh</td>
+                        <td> <b><?php echo $row->nama_penerus;?></b></td>
+                        <td><?php echo $row->date_update;?></td>
                       </tr>
-                      <tr>
-                        <td>Dokumen disetujui oleh <b>pengelola</b></td>
-                        <td>Sony</td>
-                        <td>Senin, 19 April 2021 08:45</td>
-                      </tr>
-                      <tr>
-                        <td>Dokumen sedang dicek oleh <b>pengelola</b></td>
-                        <td>Sony</td>
-                        <td>Senin, 19 April 2021 08:35</td>
-                      </tr>
-                      <tr>
-                        <td>Dokumen dibuat oleh <b>sekretaris</b></td>
-                        <td>Marsha</td>
-                        <td>Senin, 19 April 2021 08:00</td>
-                      </tr>
+                      <?php };?>
+                      <?php };?>
+                      
                     </tbody>
                   </table>
                 </br>
