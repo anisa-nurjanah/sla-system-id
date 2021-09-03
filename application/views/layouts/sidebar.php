@@ -41,10 +41,7 @@
     							<i class="far fa-circle nav-icon"></i>
     							<p>SEKRETARIS</p>
     						</a>
-							<a href="<?php echo site_url("BerandaSekretaris/history");?>" class="nav-link">
-    							<i class="far fa-circle nav-icon"></i>
-    							<p>History</p>
-    						</a>
+							
     					</li>
 						
 						<?php }elseif($this->session->userdata('posisi')== 1 || $this->session->userdata('posisi')== 4){;?>
@@ -53,10 +50,7 @@
     							<i class="far fa-circle nav-icon"></i>
     							<p>DGM/GM</p>
     						</a>
-							<a href="<?php echo site_url("BerandaDGM/history");?>" class="nav-link">
-    							<i class="far fa-circle nav-icon"></i>
-    							<p>History</p>
-    						</a>
+							
     					</li>
 						<?php }elseif($this->session->userdata('posisi')== 1 || $this->session->userdata('posisi')== 5){;?>
     					<li class="nav-item">
@@ -64,10 +58,7 @@
     							<i class="far fa-circle nav-icon"></i>
     							<p>PIMPINAN</p>
     						</a>
-							<a href="<?php echo site_url("BerandaPimpinan/history");?>" class="nav-link">
-    							<i class="far fa-circle nav-icon"></i>
-    							<p>History</p>
-    						</a>
+						
     					</li>
 						<?php }elseif($this->session->userdata('posisi')== 1 || $this->session->userdata('posisi')== 6){;?>
     					<li class="nav-item">
@@ -90,10 +81,7 @@
     							<i class="far fa-circle nav-icon"></i>
     							<p>SEKRETARIS BISNIS</p>
     						</a>
-							<a href="<?php echo site_url("BerandaSekretarisBisnis/history");?>" class="nav-link">
-    							<i class="far fa-circle nav-icon"></i>
-    							<p>History</p>
-    						</a>
+							
     					</li>
 						<?php };?>
     					
