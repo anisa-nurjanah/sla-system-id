@@ -37,9 +37,9 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-lg-12 col-sm-12 control-label">Tanggal Lahir</label>
+						<label class="col-lg-12 col-sm-12 control-label">password</label>
 						<div class="col-lg-12">
-							<input type="date" class="form-control" id="tgl_lahir" name="tgl_lahir">
+							<input type="date" class="form-control" id="password" name="password">
 						</div>
 					</div>
 				
@@ -91,9 +91,9 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-lg-12 col-sm-12 control-label">Tanggal Lahir</label>
+						<label class="col-lg-12 col-sm-12 control-label">password</label>
 						<div class="col-lg-12">
-							<input type="date" class="form-control" id="tgl_lahir" name="tgl_lahir">
+							<input type="date" class="form-control" id="password" name="password">
 						</div>
 					</div>
 					

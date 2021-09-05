@@ -27,8 +27,7 @@ class Administrasi extends CI_Controller {
             "npp"	        => $this->input->post('npp'),
             "nama"          => $this->input->post('nama'),
             "posisi"  => $this->input->post('posisi'),
-            "tgl_lahir"     => $this->input->post('tgl_lahir'),
-            "password"      =>$this->converPassword(date($this->input->post('tgl_lahir')))
+            "password"      =>md5($this->input->post('password'))
         );
 
         if($this->crud_models->add_data($data,'tb_pengguna')){
@@ -48,8 +47,7 @@ class Administrasi extends CI_Controller {
                         "npp"	        => $this->input->post('npp'),
                         "nama"          => $this->input->post('nama'),
                         "posisi"  => $this->input->post('posisi'),
-                        "tgl_lahir"     => $this->input->post('tgl_lahir'),
-                        "password"      =>$this->converPassword(date($this->input->post('tgl_lahir')))
+                        "password"      =>md5($this->input->post('password'))
                     );
 
         if($this->crud_models->edit_data($data,$id,'tb_pengguna')){
