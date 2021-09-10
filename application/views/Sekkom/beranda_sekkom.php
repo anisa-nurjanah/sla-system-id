@@ -1,4 +1,3 @@
-
 <!-- modal add -->
 <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="add-tb" class="modal fade">
 	<div class="modal-dialog">
@@ -7,7 +6,7 @@
 				<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
 				<h4 class="modal-title">Tambah</h4>
 			</div>
-			<form class="form-horizontal" action="<?php echo base_url('berandasekkom/add_document')?>" method="post"
+			<form class="form-horizontal" action="<?php echo base_url('BerandaSekkom/add_document')?>" method="post"
 				enctype="multipart/form-data" role="form">
 				<div class="modal-body">
 
@@ -24,28 +23,28 @@
 						</div>
 					</div>
 
-          <div class="form-group">
+					<div class="form-group">
 						<label class="col-lg-12 col-sm-12 control-label">File NK3</label>
 						<div class="col-lg-12">
 							<input type="file" class="form-control" id="file_nk3" name="file_nk3">
 						</div>
 					</div>
 
-          <div class="form-group">
+					<div class="form-group">
 						<label class="col-lg-12 col-sm-12 control-label">Diterukan</label>
 						<div class="col-lg-12">
-              <select name="id_penerus" id="id_penerus" class="form-control">
-                <?php foreach($pengguna as $row){;?>
-                  <option value="<?php echo $row->npp;?>"><?php echo $row->nama;?></option>
-                <?php };?>
-              </select>
+							<select name="id_penerus" id="id_penerus" class="form-control">
+								<?php foreach($pengguna as $row){;?>
+								<option value="<?php echo $row->npp;?>"><?php echo $row->nama;?></option>
+								<?php };?>
+							</select>
 						</div>
 					</div>
 
 
-					
-				
-				
+
+
+
 				</div>
 				<div class="modal-footer">
 
@@ -68,7 +67,7 @@
 			<form class="form-horizontal" action="<?php echo base_url('BerandaSekkom/edit_document')?>" method="post"
 				enctype="multipart/form-data" role="form">
 				<div class="modal-body">
-          			<div class="form-group">
+					<div class="form-group">
 						<label class="col-lg-12 col-sm-12 control-label">Nomor Dokumen</label>
 						<div class="col-lg-12">
 							<input type="text" class="form-control" id="no_document" name="no_document">
@@ -84,7 +83,7 @@
 						</div>
 					</div>
 
-          			<div class="form-group">
+					<div class="form-group">
 						<label class="col-lg-12 col-sm-12 control-label">File NK3</label>
 						<div class="col-lg-12">
 							<input type="file" class="form-control" id="file_nk3" name="file_nk3">
@@ -101,7 +100,7 @@
 							</select>
 						</div>
 					</div>
-					
+
 				</div>
 				<div class="modal-footer">
 
@@ -131,7 +130,8 @@
 							<input type="hidden" name="id_document" id="id_document">
 							<input type="hidden" name="id_history" id="id_history">
 							<input type="hidden" name="id_history" id="id_history">
-							<input type="text" name="file_exisisting" id="file_exisisting" class="form-control" readonly>
+							<input type="text" name="file_exisisting" id="file_exisisting" class="form-control"
+								readonly>
 
 						</div>
 					</div>
@@ -166,11 +166,11 @@
 
 	<!-- Main content -->
 	<section class="content">
-    
+
 		<div class="container-fluid">
-      <a href="javascript:;" class="add-modal btn btn-info btn-sm" data-toggle="modal" data-target="#add-tb">
-        <i class="fa fa-plus"></i>
-      </a>
+			<a href="javascript:;" class="add-modal btn btn-info btn-sm" data-toggle="modal" data-target="#add-tb">
+				<i class="fa fa-plus"></i>
+			</a>
 			<div class="row">
 				<div class="col-12">
 					<div class="card">
@@ -179,7 +179,7 @@
 							<div class="card-tools">
 							</div>
 						</div>
-            
+
 						<div class="card-body">
 							<table class="table table-striped" id="example1" width="100%" data-page-length='5'
 								data-length-change='false'>
@@ -204,32 +204,29 @@
 										<td><?php echo $row->nama_penerus;?></td>
 										<td><?php echo $row->date_created;?></td>
 										<td><?php echo $row->date_update;?></td>
-										<td> <a href="<?php echo base_url('assets/document/'.$row->file_nk3);?>" target="_blank">Download File</a> </td>
-									
+										<td> <a href="<?php echo base_url('assets/document/'.$row->file_nk3);?>"
+												target="_blank">Download File</a> </td>
+
 										<td>
-											<a href="<?=site_url('DokumenDiproses/detail/'.$row->id_document)?>" class="btn btn-success">
-												<i class="far fa-file nav-icon"></i>  Lihat Detail
+											<a href="<?=site_url('DokumenDiproses/detail/'.$row->id_document)?>"
+												class="btn btn-success">
+												<i class="far fa-file nav-icon"></i> Lihat Detail
 											</a>
-											<a 
-												href="javascript:;" 
-												data-id_document="<?php echo $row->id_document ?>" 
-												data-id_history="<?php echo $row->id_history ?>" 
+											<a href="javascript:;" data-id_document="<?php echo $row->id_document ?>"
+												data-id_history="<?php echo $row->id_history ?>"
 												data-no_document="<?php echo $row->no_document ?>"
-												data-debitur="<?php echo $row->debitur ?>" 
+												data-debitur="<?php echo $row->debitur ?>"
 												data-file_nk3="<?php echo $row->file_nk3 ?>"
-												data-file_exisisting="<?php echo $row->file_nk3 ?>"
-												data-toggle="modal" 
-												data-target="#edit-data"
-												class="show-modal btn btn-info btn-sm">
+												data-file_exisisting="<?php echo $row->file_nk3 ?>" data-toggle="modal"
+												data-target="#edit-data" class="show-modal btn btn-info btn-sm">
 												<i class="fa fa-edit"></i>
 											</a>
 
-											<a href="javascript:;" 
-												data-id_document="<?php echo $row->id_document ?>" 
-												data-id_history="<?php echo $row->id_history ?>" 
+											<a href="javascript:;" data-id_document="<?php echo $row->id_document ?>"
+												data-id_history="<?php echo $row->id_history ?>"
 												data-no_document="<?php echo $row->no_document ?>"
-												data-file_exisisting="<?php echo $row->file_nk3 ?>"
-												data-toggle="modal" data-target="#delete-data" class="show-modal btn btn-danger btn-sm">
+												data-file_exisisting="<?php echo $row->file_nk3 ?>" data-toggle="modal"
+												data-target="#delete-data" class="show-modal btn btn-danger btn-sm">
 												<i class="fa fa-trash"></i>
 											</a>
 										</td>

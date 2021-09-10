@@ -12,9 +12,10 @@ class DokumenDiproses extends CI_Controller {
 
 	}
 
-	public function read($id_document)
+	public function read()
 	{
-		$data['content'] = $this->load->view('role-admin/dokumen_diproses','',TRUE);
+		$data['table']   	= $this->crud_models->get_all_data('document')->result();  
+		$data['content'] = $this->load->view('role-admin/dokumen_diproses',$data,TRUE);
 		$this->load->view('layouts/html', $data);
 	}
 
