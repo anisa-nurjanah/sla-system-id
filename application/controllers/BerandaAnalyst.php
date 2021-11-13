@@ -89,7 +89,8 @@ class BerandaAnalyst extends CI_Controller {
 				"fia_check"     	=> $this->input->post('fia_check'),
 				"ipk_check"     	=> $this->input->post('ipk_check'),
 				"created_at"    => date('Y-m-d H:i:s'),
-				"updated_at"    => date('Y-m-d H:i:s')
+				"updated_at"    => date('Y-m-d H:i:s'),
+				"remaks"     	=> $this->input->post('remaks')
 			);
 	
 			

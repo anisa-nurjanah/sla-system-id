@@ -26,31 +26,35 @@
 					<!-- general form elements -->
 					<div class="card card-orange">
 						<div class="card-header">
-							<h3 class="card-title"><?php echo $history->nama_pengguna;?></h3>
+							<a data-toggle="collapse" href="#collapseExample<?php echo $history->id_history;?>" role="button" aria-expanded="false" aria-controls="collapseExample<?php echo $history->id_history;?>">
+								<h3 class="card-title"><?php echo $history->nama_pengguna;?></h3>
+							</a>
 						</div>
 						<!-- /.card-header -->
 						<!-- form start -->
-						<form>
-							<div class="card-body">
-								<div class="form-group">
-									<label for="exampleInputEmail1">Nomor Dokumen</label>
-									<input type="text" class="form-control" name="no_document" disabled
-										value="<?php echo $history->no_document;?>" id="exampleInputEmail1"
-										placeholder="Nomor PAK">
+						<div class="collapse" id="collapseExample<?php echo $history->id_history;?>" >
+							<form>
+								<div class="card-body">
+									<div class="form-group">
+										<label for="exampleInputEmail1">Nomor Dokumen</label>
+										<input type="text" class="form-control" name="no_document" disabled
+											value="<?php echo $history->no_document;?>" id="exampleInputEmail1"
+											placeholder="Nomor PAK">
+									</div>
+									<div class="form-group">
+										<label for="exampleInputPassword1">Nama Debitur</label>
+										<input type="text" class="form-control" name="debitur" disabled
+											value="<?php echo $history->debitur;?>" id="exampleInputPassword1"
+											placeholder="Nama PAK">
+									</div>
+									<div class="form-group">
+										<label for="exampleInputPassword1">Download Document</label>
+										<a href="<?php echo base_url('assets/document/'.$history->file_nk3);?>"
+											target="_blank">Download File</a>
+									</div>
 								</div>
-								<div class="form-group">
-									<label for="exampleInputPassword1">Nama Debitur</label>
-									<input type="text" class="form-control" name="debitur" disabled
-										value="<?php echo $history->debitur;?>" id="exampleInputPassword1"
-										placeholder="Nama PAK">
-								</div>
-								<div class="form-group">
-									<label for="exampleInputPassword1">Download Document</label>
-									<a href="<?php echo base_url('assets/document/'.$history->file_nk3);?>"
-										target="_blank">Download File</a>
-								</div>
-							</div>
-						</form>
+							</form>
+						</div>
 					</div>
 
 					<!-- general form elements -->

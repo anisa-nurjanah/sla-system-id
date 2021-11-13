@@ -9,7 +9,7 @@
 				</div>
 				<div class="col-sm-6">
 					<ol class="breadcrumb float-sm-right">
-						<li class="breadcrumb-item">Sekretaris</li>
+						<li class="breadcrumb-item">Detail Dokumen</li>
 						<li class="breadcrumb-item active"><?php echo $history->no_document;?></li>
 					</ol>
 				</div>
@@ -53,6 +53,12 @@
 											<label>Tanggal Terakhir Diubah</label>
 											<input type="text" value="<?php echo $row->date_update;?>" disabled
 												class="form-control">
+										</div>
+										<div class="form-group">
+											<label>Document</label> <br>
+											<a href="<?php echo base_url('assets/document/'.$row->file_nk3);?>"
+													target="_blank">Download File</a>
+											
 										</div>
 
 

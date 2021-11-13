@@ -9,7 +9,7 @@
 				</div>
 				<div class="col-sm-6">
 					<ol class="breadcrumb float-sm-right">
-						<li class="breadcrumb-item">Sekretaris</li>
+						<li class="breadcrumb-item">Detail Dokumen</li>
 						<li class="breadcrumb-item active"><?php echo $history->no_document;?></li>
 					</ol>
 				</div>
@@ -26,47 +26,51 @@
                 <?php foreach ($history2 as $row){?>
 					<div class="card card-orange">
 						<div class="card-header">
-							<h3 class="card-title"><?php echo $row->nama_pengguna;?></h3>
+							<a data-toggle="collapse" href="#collapseExample<?php echo $row->id_history;?>" role="button" aria-expanded="false" aria-controls="collapseExample<?php echo $row->id_history;?>">
+								<h3 class="card-title"><?php echo $row->nama_pengguna;?></h3>
+							</a>
 						</div>
 						<!-- /.card-header -->
 						<!-- form start -->
-						<form>
-							<div class="card-body">
-								<div class="form-group">
-									<label for="exampleInputEmail1">Nomor Dokumen</label>
-									<input type="text" class="form-control" name="no_document" disabled
-										value="<?php echo $history->no_document;?>" id="exampleInputEmail1"
-										placeholder="Nomor PAK">
-								</div>
-								<div class="form-group">
-									<label for="exampleInputPassword1">Nama Debitur</label>
-									<input type="text" class="form-control" name="debitur" disabled
-										value="<?php echo $history->debitur;?>" id="exampleInputPassword1"
-										placeholder="Nama PAK">
-								</div>
+						<div class="collapse" id="collapseExample<?php echo $row->id_history;?>" >
+							<form>
+								<div class="card-body">
+									<div class="form-group">
+										<label for="exampleInputEmail1">Nomor Dokumen</label>
+										<input type="text" class="form-control" name="no_document" disabled
+											value="<?php echo $history->no_document;?>" id="exampleInputEmail1"
+											placeholder="Nomor PAK">
+									</div>
+									<div class="form-group">
+										<label for="exampleInputPassword1">Nama Debitur</label>
+										<input type="text" class="form-control" name="debitur" disabled
+											value="<?php echo $history->debitur;?>" id="exampleInputPassword1"
+											placeholder="Nama PAK">
+									</div>
 
-                                <div class="form-group">
-									<label for="exampleInputPassword1">Nomor Skk</label>
-									<input type="text" class="form-control" name="no_skk" disabled
-										value="<?php echo $history->no_skk;?>" id="exampleInputPassword1"
-										placeholder="Nama SKK">
+									<div class="form-group">
+										<label for="exampleInputPassword1">Nomor Skk</label>
+										<input type="text" class="form-control" name="no_skk" disabled
+											value="<?php echo $history->no_skk;?>" id="exampleInputPassword1"
+											placeholder="Nama SKK">
+									</div>
+
+									<div class="form-group">
+										<label>Tanggal Terakhir Diubah</label>
+										<input type="text" value="<?php echo $row->date_update;?>" disabled
+											class="form-control">
+									</div>
+
+
+									<div class="form-group">
+										<label>Catatan</label>
+										<textarea name="remaks" id="remaks" class="form-control" cols="30" rows="10"
+											disabled> <?php echo $row->remaks;?> </textarea>
+									</div>
+
 								</div>
-
-								<div class="form-group">
-									<label>Tanggal Terakhir Diubah</label>
-									<input type="text" value="<?php echo $row->date_update;?>" disabled
-										class="form-control">
-								</div>
-
-
-								<div class="form-group">
-									<label>Catatan</label>
-									<textarea name="remaks" id="remaks" class="form-control" cols="30" rows="10"
-										disabled> <?php echo $row->remaks;?> </textarea>
-								</div>
-
-							</div>
-						</form>
+							</form>
+						</div>
 					</div>
 				<?php };?>
 					<!-- general form elements -->
@@ -109,7 +113,7 @@
 					<!-- general form elements -->
 					<div class="card card-orange">
 						<div class="card-header">
-							<h3 class="card-title">Sekretaris <?php echo $history->nama_penerus;?></h3>
+							<h3 class="card-title"> <?php echo $history->nama_penerus;?></h3>
 						</div>
 
 						<form action="<?php echo base_url('BerandaSekretaris/ubah_dokumen2');?>" method="post">

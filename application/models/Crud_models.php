@@ -90,5 +90,14 @@ class Crud_models extends CI_Model
         $query = $this->db->query('SELECT * FROM tb_document WHERE status = 15');
         return $query->num_rows();
     }
+
+    public function get_detail_document($id_document){
+        $this->db->select('a.*, b.nama_posisi');
+        $this->db->from('document a');
+        $this->db->where('a.id_document',$id_document);
+        $this->db->join('tb_level_user b', 'a.posisi_pengguna = b.posisi','left');
+		return $this->db->get();
+
+    }
     
 }

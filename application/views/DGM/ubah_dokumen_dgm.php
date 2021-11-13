@@ -79,7 +79,7 @@
 					<!-- general form elements -->
 					<div class="card card-orange">
 						<div class="card-header">
-							<h3 class="card-title">Sekretaris <?php echo $history->nama_penerus;?></h3>
+							<h3 class="card-title"><?php echo $history->nama_penerus;?></h3>
 						</div>
 
 						<form action="<?php echo base_url('BerandaDGM/ubah_dokumen');?>" method="post">

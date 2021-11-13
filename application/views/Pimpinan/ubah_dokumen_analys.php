@@ -119,6 +119,11 @@
 									</label>
 								</div>
 								<div class="form-group">
+									<label>catatan</label>
+									<input type="text" name="remaks" value="<?php echo $row->remaks;?>" disabled class="form-control">
+
+								</div>
+								<div class="form-group">
 									
 									
 								</div>
@@ -151,7 +156,7 @@
 							<div class="card-footer">
 								<button type="submit" name="submit" value="submit"
 									class="btn btn-primary">Setuju</button>
-								<button type="submit" name="submit" value="tolak" class="btn btn-danger">Tolak</button>
+								<button type="submit" name="submit" value="tolak" class="btn btn-danger">Riject</button>
 							</div>
 						</form>
 					</div>

@@ -20,8 +20,8 @@ class DokumenDiproses extends CI_Controller {
 	}
 
 	public function detail($id_document){
-		$data['document']	= $this->db->get_where('document', array('id_document' => $id_document))->row();
-		$data['history']	= $this->crud_models->get_data_document('document','id_document',$id_document)->result();
+		$data['document']	= $this->crud_models->get_detail_document($id_document)->row();
+		$data['history']	=  $this->crud_models->get_detail_document($id_document)->result();
 		
 		$data['content'] = $this->load->view('role-admin/dokumen_diproses_detail',$data,TRUE);
 		$this->load->view('layouts/html', $data);
